@@ -7,18 +7,24 @@ let g:Tex_DefaultTargetFormat='pdf'
 let g:Tex_CompileRule_pdf='xelatex -interaction=nonstopmode -enable-write18 $*'
 let g:Tex_MultipleCompileFormats='pdf'
 
+" Gams syntax highlighting
+"au BufNewFile,BufRead *.gms set ft=gams
+au BufEnter *.gms set ft=gams
+
 " Spelling
 au BufNewFile,BufRead,BufEnter *.tex set spell
 au BufNewFile,BufRead,BufEnter *.Rnw set spell
-au BufRead *.md set spell
+au BufNewFile,BufRead,BufEnter *.md set spell
+"au BufRead *.md set spell
 "au BufRead *.wiki set spell
 
 " Ignore CamelCase words when spell checking
 "fun! IgnoreCamelCaseSpell()
-"   syn match CamelCase "/\<[A-Z][a-z]\+[A-Z].\{-}\>/" contains=@NoSpell transparent 
-"   syn cluster Spell add=CamelCase
+   "syn match CamelCase "/\<[A-Z][a-z]\+[A-Z].\{-}\>/" contains=@NoSpell transparent 
+   "syn cluster Spell add=CamelCase
 "endfun
 "autocmd BufRead,BufNewFile * :call IgnoreCamelCaseSpell()
+"autocmd BufNewFile,BufRead,BufEnter * :call IgnoreCamelCaseSpell()
 
 imap CIT \citet{}
 imap CIP \citep{}
@@ -26,6 +32,8 @@ imap REF \ref{}
 imap NO \nomenclature{}
 nnoremap ; :
 imap jj <Esc>
+
+command Swap dawwP
 
 cmap W w
 cmap Q q

@@ -1,0 +1,16 @@
+Scratchpad
+
+• Shann Gu, 13 km2, 133000 people
+• Generic MILP model, 87 ha, 6500 people 
+
+To get started enter a title for your note above. When you’re ready to save
+your note just use Vim’s :write or :update commands, a filename will be picked
+automatically based on the title.
+
+                                    * * *
+
+The notes plug-in comes with self hosting documentation. To jump to these notes
+position your cursor on the highlighted name and press ‘gf’ in normal mode:
+
+ • Note taking syntax
+ • Note taking commands
