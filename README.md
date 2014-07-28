@@ -1,6 +1,6 @@
 # README
 
-This repository contains all the plugins and my `.vimrc` in my `~/.vim` directory.
+This repository contains all the plugins and my `.vimrc` in my `~/.vim` directory. Its contents should be stored in `~/.vim`.
 
 ## .vimrc
 
