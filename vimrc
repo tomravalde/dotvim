@@ -72,8 +72,7 @@ let g:vimwiki_list = [{'path': '~/Dropbox/workWiki/',
 			\'path_html': '~/Dropbox/workWiki_html/',
 			\'template_path': '~/Dropbox/workWiki/template/',
 			\'template_default': 'default',
-			\'template_ext': '.tpl'}
-			]
+			\'template_ext': '.tpl'},]
 let g:vimwiki_hl_headers=1
 
 " Other
