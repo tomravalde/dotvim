@@ -8,7 +8,15 @@ let g:Tex_DefaultTargetFormat='pdf'
 let g:Tex_CompileRule_pdf='xelatex -interaction=nonstopmode -enable-write18 $*'
 let g:Tex_MultipleCompileFormats='pdf'
 " pandoc-bibfiles
-let g:pandoc_bibfiles = ['/home/tr608/ImpCol/PhD/my-refs.bib']
+let g:pandoc_bibfiles = ["/home/tr608/ImpCol/PhD/my-refs.bib"]
+let b:pandoc_bibfiles = ["/home/tr608/ImpCol/PhD/my-refs.bib"]
+
+" Citation autocomplete
+let g:pandoc#filetypes#handled=["pandoc", "markdown"]
+let g:pandoc#filetypes#handled=["pandoc", "rst"]
+let g:pandoc#biblio#bibs=["/home/tr608/ImpCol/PhD/my-refs.bib"]
+let g:pandoc#biblio#sources=["/home/tr608/ImpCol/PhD/my-refs.bib"]
+let g:pandoc#completion#bib#mode="fallback"
 
 " Gams syntax highlighting
 au BufEnter *.gms set ft=gams
